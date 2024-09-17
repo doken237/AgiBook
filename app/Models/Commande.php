@@ -24,7 +24,7 @@ class Commande extends Model
         return $this->belongsTo(Country::class,'country_id');
     }
 
-    public function fiches_techniques(){
+    public function fiches_technique(){
       
         return $this->belongsTo(Fiches_Technique::class,'fiche_technique_id');
     }

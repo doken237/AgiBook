@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('photo');
             $table->string('speculation_id');
             $table->float('prix');
-            $table->boolean('Etat');
+            $table->boolean('etat');
             $table->timestamps();
         });
     }
