@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('phonecode');
             $table->string('currency');
-            $table->flaot('taux_conversion');
+            $table->float('taux_conversion');
             $table->timestamps();
         });
     }

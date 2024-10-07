@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
+           
             $table->id();
             $table->string('name');
             $table->string('telephone')->unique();
@@ -20,16 +21,10 @@ return new class extends Migration
             $table->integer('role');
             $table->rememberToken();
             $table->timestamps();
+            
+
         });
-
-
-        $users=User::create([
-            'name'=>'doken',
-            'telephone'=>'651726743',
-            'email'=>'dokfongang34@gmail.com',
-            'password'=>'dokenpro2024',
-            'role'=>1,
-        ]);
+        
     }
 
    
